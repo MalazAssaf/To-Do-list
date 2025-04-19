@@ -1,0 +1,92 @@
+:root{
+    --main-color: #f45339;
+    --sec-color: black;
+    --div-color: #111726;
+    --text-color: #5d6777;
+}
+
+body{
+    background-color: #364050;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    transition: 0.8s;
+}
+
+.container{
+    width: 70%;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main #input-feild {
+    margin-right: 20px;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--sec-color);
+    border-radius: 10px;
+    color: white;
+}
+
+main #input-feild::placeholder{
+    color: white;
+}
+
+main #input-feild:focus{
+    outline: none;
+}
+
+main .add, .tasks div input{
+    color: white;
+    border-radius: 10px;
+    background-color: var(--sec-color);
+    cursor: pointer;
+    padding: 15px;
+}
+
+main .add:hover{
+    background-color: var(--main-color);
+}
+
+h2, h3{
+    color: var(--text-color);
+    margin: 50px 0;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.tasks div{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tasks div p {
+    width: 100%;
+    background-color: var(--div-color);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    margin: 0 35px 0 0;
+}
+
+.tasks div input{
+    background-color: var(--main-color);
+}
+
+.tasks div input:hover{
+    background-color: red;
+}
